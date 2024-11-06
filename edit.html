@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit {{.Title}}</title>
+</head>
+<body>
+    <h1>Edit {{.Title}}</h1>
+    <form action="/save/{{.Title}}" method="POST">
+        <textarea name="body">{{.Body}}</textarea><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
